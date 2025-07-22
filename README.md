@@ -60,5 +60,30 @@ func (r *CSVReader) ReadSourceTransactions(filePath string) ([]SourceTransaction
 // ReadSystemTransactions reads system transactions from a CSV file
 func (r *CSVReader) ReadSystemTransactions(filePath string) ([]SystemTransaction, error) {}
 ```
+## Creating reconciler struct to implement the reconciliation logic
 
+can be seen in [reconciler.go](./reconciler.go)
 
+```Go
+
+// TransactionReconciler handles the reconciliation logic
+type TransactionReconciler struct{}
+
+// NewTransactionReconciler creates a new reconciler instance
+func NewTransactionReconciler() *TransactionReconciler {
+	return &TransactionReconciler{}
+}
+
+// Reconcile performs the reconciliation between source and system transactions
+func (tr *TransactionReconciler) Reconcile(sourceTransactions []SourceTransaction, systemTransactions []SystemTransaction) *ReconciliationResult {}
+
+// findDiscrepancies compares a source transaction with a system transaction and returns discrepancies
+func (tr *TransactionReconciler) findDiscrepancies(source SourceTransaction, system SystemTransaction) map[string]Discrepancy {
+	discrepancies := make(map[string]Discrepancy) {}
+
+// the logic to compare amounts, I added a tolerance for floating point percision
+func (tr *TransactionReconciler) isAmountEqual(amount1, amount2 float64) bool {}
+
+// normalize the status values for comparison
+func (tr *TransactionReconciler) normalizeStatus(status string) string
+```
