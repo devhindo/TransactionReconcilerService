@@ -94,3 +94,7 @@ func (tr *TransactionReconciler) isAmountEqual(amount1, amount2 float64) bool {}
 // normalize the status values for comparison
 func (tr *TransactionReconciler) normalizeStatus(status string) string
 ```
+
+## Printing the summary of the reconciliation
+
+![summary](./assets/imgs/summary.png)
