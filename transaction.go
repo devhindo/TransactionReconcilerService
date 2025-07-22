@@ -1,16 +1,16 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
-	"strings"
-	"encoding/json"
 	"os"
+	"strings"
 )
 
 // TransactionReconciliationService is the main service that generates the reconciliation report
 type TransactionReconciliationService struct {
-	csvReader  *CSVReader // it requires a CSVReader
+	csvReader  *CSVReader             // it requires a CSVReader
 	reconciler *TransactionReconciler // a reconciler to handle the logic
 }
 
@@ -50,12 +50,39 @@ func (s *TransactionReconciliationService) ProcessReconciliation(sourceFilePath,
 
 // OutputReconciliationResult outputs the reconciliation result in JSON format
 func (s *TransactionReconciliationService) OutputReconciliationResult(result *ReconciliationResult) error {
-	// Create output in the required format
-	output := map[string]interface{}{
-		"missing_in_internal":      result.MissingInInternal,
-		"missing_in_source":        result.MissingInSource,
-		"mismatched_transactions":  result.MismatchedTransactions,
-		"summary":                  result.Summary,
+	// Transform missing_in_internal to simplified format
+	missingInInternal := make([]map[string]interface{}, len(result.MissingInInternal))
+	for i, txn := range result.MissingInInternal {
+		missingInInternal[i] = map[string]interface{}{
+			"providerTransactionId": txn.ProviderTransactionID,
+			"amount":                txn.Amount,
+			"currency":              txn.Currency,
+			"status":                txn.Status,
+		}
+	}
+
+	// Transform missing_in_source to simplified format
+	missingInSource := make([]map[string]interface{}, len(result.MissingInSource))
+	for i, txn := range result.MissingInSource {
+		missingInSource[i] = map[string]interface{}{
+			"transactionId": txn.TransactionID,
+			"amount":        txn.Amount,
+			"currency":      txn.Currency,
+			"status":        txn.Status,
+		}
+	}
+
+	// Create ordered output structure to ensure proper JSON field order
+	type OrderedOutput struct {
+		MissingInInternal      []map[string]interface{} `json:"missing_in_internal"`
+		MissingInSource        []map[string]interface{} `json:"missing_in_source"`
+		MismatchedTransactions []MismatchedTransaction  `json:"mismatched_transactions"`
+	}
+
+	output := OrderedOutput{
+		MissingInInternal:      missingInInternal,
+		MissingInSource:        missingInSource,
+		MismatchedTransactions: result.MismatchedTransactions,
 	}
 
 	// Convert to JSON with pretty printing
@@ -76,6 +103,51 @@ func (s *TransactionReconciliationService) OutputReconciliationResult(result *Re
 		log.Printf("Reconciliation report saved to: %s", outputFile)
 	}
 
+	// Save summary to separate file
+	err = s.OutputSummaryToFile(result)
+	if err != nil {
+		log.Printf("Warning: Could not save summary to file: %v", err)
+	}
+
+	return nil
+}
+
+// OutputSummaryToFile saves the reconciliation summary to a text file
+func (s *TransactionReconciliationService) OutputSummaryToFile(result *ReconciliationResult) error {
+	separator := strings.Repeat("=", 60)
+	var summaryContent strings.Builder
+
+	summaryContent.WriteString(separator + "\n")
+	summaryContent.WriteString("TRANSACTION RECONCILIATION SUMMARY\n")
+	summaryContent.WriteString(separator + "\n")
+	summaryContent.WriteString(fmt.Sprintf("Total Source Transactions:      %d\n", result.Summary.TotalSourceTransactions))
+	summaryContent.WriteString(fmt.Sprintf("Total System Transactions:      %d\n", result.Summary.TotalSystemTransactions))
+	summaryContent.WriteString(fmt.Sprintf("Successfully Matched:           %d\n", result.Summary.SuccessfullyMatchedCount))
+	summaryContent.WriteString(fmt.Sprintf("Missing in Internal System:     %d\n", result.Summary.MissingInInternalCount))
+	summaryContent.WriteString(fmt.Sprintf("Missing in Source:              %d\n", result.Summary.MissingInSourceCount))
+	summaryContent.WriteString(fmt.Sprintf("Mismatched Transactions:        %d\n", result.Summary.MismatchedTransactionsCount))
+	summaryContent.WriteString(separator + "\n")
+
+	// Calculate reconciliation rate
+	totalPossibleMatches := result.Summary.TotalSourceTransactions
+	if result.Summary.TotalSystemTransactions < totalPossibleMatches {
+		totalPossibleMatches = result.Summary.TotalSystemTransactions
+	}
+
+	if totalPossibleMatches > 0 {
+		matchRate := float64(result.Summary.SuccessfullyMatchedCount) / float64(totalPossibleMatches) * 100
+		summaryContent.WriteString(fmt.Sprintf("Reconciliation Rate:            %.2f%%\n", matchRate))
+	}
+	summaryContent.WriteString(separator + "\n")
+
+	// Save to file
+	summaryFile := "summary.txt"
+	err := os.WriteFile(summaryFile, []byte(summaryContent.String()), 0644)
+	if err != nil {
+		return fmt.Errorf("failed to write summary to file: %w", err)
+	}
+
+	log.Printf("Summary report saved to: %s", summaryFile)
 	return nil
 }
 
@@ -98,7 +170,7 @@ func (s *TransactionReconciliationService) PrintSummary(result *ReconciliationRe
 	if result.Summary.TotalSystemTransactions < totalPossibleMatches {
 		totalPossibleMatches = result.Summary.TotalSystemTransactions
 	}
-	
+
 	if totalPossibleMatches > 0 {
 		matchRate := float64(result.Summary.SuccessfullyMatchedCount) / float64(totalPossibleMatches) * 100
 		fmt.Printf("Reconciliation Rate:            %.2f%%\n", matchRate)

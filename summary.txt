@@ -1,0 +1,12 @@
+============================================================
+TRANSACTION RECONCILIATION SUMMARY
+============================================================
+Total Source Transactions:      91
+Total System Transactions:      122
+Successfully Matched:           49
+Missing in Internal System:     28
+Missing in Source:              59
+Mismatched Transactions:        14
+============================================================
+Reconciliation Rate:            53.85%
+============================================================
