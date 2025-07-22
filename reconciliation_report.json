@@ -1,0 +1,1469 @@
+{
+  "mismatched_transactions": [
+    {
+      "transactionId": "6873377f-0e02-4267-82d7-dd186b578d69",
+      "discrepancies": {
+        "amount": {
+          "source": 1264.06,
+          "system": 1377.59
+        },
+        "status": {
+          "source": "pending",
+          "system": "completed"
+        }
+      }
+    },
+    {
+      "transactionId": "e1520e0d-cc66-421e-a07d-d3ebcae2dc00",
+      "discrepancies": {
+        "amount": {
+          "source": 377.66,
+          "system": 364.4
+        },
+        "status": {
+          "source": "disputed",
+          "system": "refunded"
+        }
+      }
+    },
+    {
+      "transactionId": "60fd2600-cb1c-41b1-ab9d-6dc3be4972dd",
+      "discrepancies": {
+        "amount": {
+          "source": 1168.73,
+          "system": 1254.61
+        },
+        "status": {
+          "source": "refunded",
+          "system": "pending"
+        }
+      }
+    },
+    {
+      "transactionId": "d013dd63-415d-46f3-b06e-491416cd5d59",
+      "discrepancies": {
+        "amount": {
+          "source": 837.3,
+          "system": 830.77
+        },
+        "status": {
+          "source": "disputed",
+          "system": "refunded"
+        }
+      }
+    },
+    {
+      "transactionId": "3104da84-2b76-468c-baba-8b8280558c3e",
+      "discrepancies": {
+        "amount": {
+          "source": 597.06,
+          "system": 577.22
+        },
+        "status": {
+          "source": "succeeded",
+          "system": "pending"
+        }
+      }
+    },
+    {
+      "transactionId": "cb879714-1f8a-415d-9dd0-c7cf3f0627fb",
+      "discrepancies": {
+        "amount": {
+          "source": 102.17,
+          "system": 96.47
+        },
+        "status": {
+          "source": "refunded",
+          "system": "failed"
+        }
+      }
+    },
+    {
+      "transactionId": "a135faf1-b2be-422b-8c86-ae0e0834b9ed",
+      "discrepancies": {
+        "amount": {
+          "source": 907.16,
+          "system": 842.21
+        },
+        "status": {
+          "source": "disputed",
+          "system": "pending"
+        }
+      }
+    },
+    {
+      "transactionId": "2cd5e409-6d24-40b6-8f3d-a68133360497",
+      "discrepancies": {
+        "amount": {
+          "source": 538.38,
+          "system": 571.04
+        },
+        "status": {
+          "source": "disputed",
+          "system": "completed"
+        }
+      }
+    },
+    {
+      "transactionId": "19991d1f-ddd7-4df0-a021-815257afefb9",
+      "discrepancies": {
+        "amount": {
+          "source": 147.55,
+          "system": 141.57
+        },
+        "status": {
+          "source": "disputed",
+          "system": "refunded"
+        }
+      }
+    },
+    {
+      "transactionId": "d7383c50-1c1e-48c4-8270-3c83de337492",
+      "discrepancies": {
+        "amount": {
+          "source": 968.85,
+          "system": 992.59
+        },
+        "status": {
+          "source": "pending",
+          "system": "completed"
+        }
+      }
+    },
+    {
+      "transactionId": "87a59c14-eebe-4a55-998e-5e3e2c5ee587",
+      "discrepancies": {
+        "amount": {
+          "source": 556.07,
+          "system": 580.48
+        },
+        "status": {
+          "source": "succeeded",
+          "system": "failed"
+        }
+      }
+    },
+    {
+      "transactionId": "e558ca3e-43da-4cdf-b5c0-1252c2f24e1e",
+      "discrepancies": {
+        "amount": {
+          "source": 596.73,
+          "system": 599.7
+        },
+        "status": {
+          "source": "succeeded",
+          "system": "failed"
+        }
+      }
+    },
+    {
+      "transactionId": "dd8c0fb8-63e7-4231-bbf4-cccc1b3a6ad0",
+      "discrepancies": {
+        "amount": {
+          "source": 30.26,
+          "system": 28.11
+        },
+        "status": {
+          "source": "failed",
+          "system": "pending"
+        }
+      }
+    },
+    {
+      "transactionId": "155c3644-4738-4854-b9cd-e84def71fe81",
+      "discrepancies": {
+        "amount": {
+          "source": 681.91,
+          "system": 625.93
+        },
+        "status": {
+          "source": "disputed",
+          "system": "pending"
+        }
+      }
+    }
+  ],
+  "missing_in_internal": [
+    {
+      "providerTransactionId": "eb81d804-9a10-4e6e-8994-9a852412e105",
+      "email": "lorraine_bradley@outlook.com",
+      "userId": "67d2c41a390065b1b3504f3f",
+      "provider": "PayPal",
+      "amount": 431.09,
+      "currency": "USD",
+      "status": "refunded",
+      "transactionType": "charge",
+      "paymentMethod": "card",
+      "createdAt": "2024-03-27T10:53:35.872Z",
+      "updatedAt": "2024-04-05T10:53:35.872Z",
+      "providerReference": "454dc894-2448-493a-85df-c17613c87055",
+      "fraudRisk": "medium",
+      "details_invoiceId": "3a162d5e-6c0c-4de3-8846-eac2ab5ebf91",
+      "details_customerName": "Lorraine Bradley",
+      "details_description": "officia incididunt irure ut aliqua culpa duis culpa"
+    },
+    {
+      "providerTransactionId": "e281781a-1fcb-49e4-8a61-2824d634f8df",
+      "email": "lynch_robinson@yahoo.com",
+      "userId": "67d2c41a4632872254891576",
+      "provider": "PayPal",
+      "amount": 450.14,
+      "currency": "USD",
+      "status": "pending",
+      "transactionType": "refund",
+      "paymentMethod": "card",
+      "createdAt": "2024-11-21T09:47:21.568Z",
+      "updatedAt": "2024-11-23T09:47:21.568Z",
+      "providerReference": "84a721da-bc63-481f-a11c-f5d46620d985",
+      "fraudRisk": "medium",
+      "details_invoiceId": "d12b83cc-e7b3-46fb-bea3-bce0b4635c72",
+      "details_customerName": "Lynch Robinson",
+      "details_description": "sunt velit sint voluptate excepteur aliqua velit consectetur"
+    },
+    {
+      "providerTransactionId": "3b9b8a00-995b-4598-a96d-e9a9017d4ca2",
+      "email": "casey_hinton@outlook.com",
+      "userId": "67d2c41a23e35897d6bb865b",
+      "provider": "Stripe",
+      "amount": 1052.17,
+      "currency": "USD",
+      "status": "refunded",
+      "transactionType": "charge",
+      "paymentMethod": "card",
+      "createdAt": "2024-04-23T05:39:13.831Z",
+      "updatedAt": "2024-05-01T05:39:13.831Z",
+      "providerReference": "ab7a4264-d742-4d63-8f68-4ede22703b5a",
+      "fraudRisk": "high",
+      "details_invoiceId": "9636c854-02b2-4274-a4b7-bb18fdcc00c7",
+      "details_customerName": "Casey Hinton",
+      "details_description": "proident culpa laboris occaecat adipisicing adipisicing duis eiusmod"
+    },
+    {
+      "providerTransactionId": "46227fd9-7fea-473a-8f3e-fad994b94de2",
+      "email": "catalina_carson@yahoo.com",
+      "userId": "67d2c41af20b970c9dbfeb0f",
+      "provider": "Stripe",
+      "amount": 935.33,
+      "currency": "USD",
+      "status": "pending",
+      "transactionType": "charge",
+      "paymentMethod": "card",
+      "createdAt": "2024-11-14T08:27:17.217Z",
+      "updatedAt": "2024-11-20T08:27:17.217Z",
+      "providerReference": "5d21aee4-62cd-4f24-8da1-11c9d8281c34",
+      "fraudRisk": "medium",
+      "details_invoiceId": "c7fcc62f-7ba2-4e9c-8397-d955bc3fa3cd",
+      "details_customerName": "Catalina Carson",
+      "details_description": "ullamco officia ex id sint fugiat quis ipsum"
+    },
+    {
+      "providerTransactionId": "e0d97a12-1be9-428f-9850-bee8c46a1789",
+      "email": "katina_patton@outlook.com",
+      "userId": "67d2c41a0225c8e675f02060",
+      "provider": "Stripe",
+      "amount": 198.77,
+      "currency": "USD",
+      "status": "disputed",
+      "transactionType": "subscription",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-11-12T21:42:04.282Z",
+      "updatedAt": "2024-11-21T21:42:04.282Z",
+      "providerReference": "f19c55a5-3af2-4b08-9e15-a6b8917cbbab",
+      "fraudRisk": "medium",
+      "details_invoiceId": "9fbd39e4-c1cd-442a-b243-3f409986a2b8",
+      "details_customerName": "Katina Patton",
+      "details_description": "in ad sit aliqua veniam ipsum nisi proident"
+    },
+    {
+      "providerTransactionId": "d462c4bf-de74-4b9b-b6b4-73868bc67beb",
+      "email": "wyatt_webster@yahoo.com",
+      "userId": "67d2c41aa87d43b19ea90fc4",
+      "provider": "Stripe",
+      "amount": 360.54,
+      "currency": "USD",
+      "status": "pending",
+      "transactionType": "payout",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-01-25T11:36:29.32Z",
+      "updatedAt": "2024-01-26T11:36:29.32Z",
+      "providerReference": "f3099a4e-edae-4270-a67b-b14d0e7323af",
+      "fraudRisk": "low",
+      "details_invoiceId": "564b3e29-cce4-4186-b91a-210e6aaa2032",
+      "details_customerName": "Wyatt Webster",
+      "details_description": "tempor nostrud nostrud reprehenderit aute dolor qui anim"
+    },
+    {
+      "providerTransactionId": "01e6ddf7-7993-46f9-9fe3-6d8d4c62e2d4",
+      "email": "maureen_baxter@outlook.com",
+      "userId": "67d2c41a9943c71979a54190",
+      "provider": "Stripe",
+      "amount": 102.55,
+      "currency": "USD",
+      "status": "pending",
+      "transactionType": "refund",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-07-12T21:17:05.148Z",
+      "updatedAt": "2024-07-21T21:17:05.148Z",
+      "providerReference": "251d9c6f-e992-4a96-b961-b7083bd85ae0",
+      "fraudRisk": "high",
+      "details_invoiceId": "23c8401f-9939-4ffb-ab2d-7bb14dc71651",
+      "details_customerName": "Maureen Baxter",
+      "details_description": "in eu voluptate qui est minim in duis"
+    },
+    {
+      "providerTransactionId": "81ab87d1-53b5-4dc7-ac44-eabc6692a3c6",
+      "email": "etta_travis@yahoo.com",
+      "userId": "67d2c41a56bfe3d427d932a6",
+      "provider": "PayPal",
+      "amount": 706.43,
+      "currency": "USD",
+      "status": "succeeded",
+      "transactionType": "charge",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-06-02T21:58:28.354Z",
+      "updatedAt": "2024-06-11T21:58:28.354Z",
+      "providerReference": "2522cad3-1955-4d55-9c02-ed7452f684ee",
+      "fraudRisk": "medium",
+      "details_invoiceId": "95429cf3-e58e-4236-aa2b-e0aef0e78600",
+      "details_customerName": "Etta Travis",
+      "details_description": "in tempor eu voluptate ex officia amet sunt"
+    },
+    {
+      "providerTransactionId": "6c63eb8f-fd68-4c27-ad70-b6cc8ce151cd",
+      "email": "holly_flores@gmail.com",
+      "userId": "67d2c41a6912a19f3373354d",
+      "provider": "Stripe",
+      "amount": 497.31,
+      "currency": "USD",
+      "status": "pending",
+      "transactionType": "payout",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-08-23T22:53:39.775Z",
+      "updatedAt": "2024-08-25T22:53:39.775Z",
+      "providerReference": "378cd5d8-f626-46b6-9efb-3abf293be432",
+      "fraudRisk": "medium",
+      "details_invoiceId": "ea35d51c-80a5-48b9-827e-a7f9238739d8",
+      "details_customerName": "Holly Flores",
+      "details_description": "cupidatat pariatur consequat Lorem laborum ipsum laboris et"
+    },
+    {
+      "providerTransactionId": "f64aa6bb-4a30-4f4a-9b9e-07b53f9fe046",
+      "email": "blackwell_taylor@yahoo.com",
+      "userId": "67d2c41aaed963c6fc45bc5a",
+      "provider": "PayPal",
+      "amount": 688.07,
+      "currency": "USD",
+      "status": "pending",
+      "transactionType": "refund",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-04-14T23:35:06.763Z",
+      "updatedAt": "2024-04-15T23:35:06.763Z",
+      "providerReference": "ebbeedea-45cb-4b74-86cf-5ce91cb00bea",
+      "fraudRisk": "medium",
+      "details_invoiceId": "4f8748b8-3ed3-4669-9822-07fc22d1f667",
+      "details_customerName": "Blackwell Taylor",
+      "details_description": "commodo elit nostrud occaecat ut qui duis consectetur"
+    },
+    {
+      "providerTransactionId": "0e8f06ba-428c-4724-96c1-78e0ef4c8bee",
+      "email": "garza_cotton@gmail.com",
+      "userId": "67d2c41a4b90faf337f6bcc9",
+      "provider": "Stripe",
+      "amount": 145.5,
+      "currency": "USD",
+      "status": "succeeded",
+      "transactionType": "charge",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-07-09T22:48:37.02Z",
+      "updatedAt": "2024-07-13T22:48:37.02Z",
+      "providerReference": "d5523382-d9fc-4e5b-a64e-4fac987ab50a",
+      "fraudRisk": "low",
+      "details_invoiceId": "b1a6d2ec-7419-4860-9e92-f06ea5a1e206",
+      "details_customerName": "Garza Cotton",
+      "details_description": "adipisicing reprehenderit non id sunt fugiat Lorem minim"
+    },
+    {
+      "providerTransactionId": "a01c03e1-8a9b-47e4-9829-569ff446176b",
+      "email": "frederick_morales@outlook.com",
+      "userId": "67d2c41a18ccff53ec4baba5",
+      "provider": "Stripe",
+      "amount": 884.16,
+      "currency": "USD",
+      "status": "pending",
+      "transactionType": "subscription",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-11-08T19:41:45.774Z",
+      "updatedAt": "2024-11-15T19:41:45.774Z",
+      "providerReference": "0e3464eb-2c2f-4dd9-ae21-00f93a7e7374",
+      "fraudRisk": "high",
+      "details_invoiceId": "8f553925-4846-4cd6-b491-dbe7223ad913",
+      "details_customerName": "Frederick Morales",
+      "details_description": "proident esse enim quis aliqua tempor eiusmod anim"
+    },
+    {
+      "providerTransactionId": "b4bc6638-bf33-4326-acd7-658269921ffb",
+      "email": "nola_horn@gmail.com",
+      "userId": "67d2c41a7e1b61c5f1645d68",
+      "provider": "PayPal",
+      "amount": 155.26,
+      "currency": "USD",
+      "status": "refunded",
+      "transactionType": "charge",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-12-21T06:17:19.785Z",
+      "updatedAt": "2024-12-26T06:17:19.785Z",
+      "providerReference": "ff8426cc-9601-45fb-9c78-6c12bbf7777e",
+      "fraudRisk": "low",
+      "details_invoiceId": "8b4b8593-e7c3-4867-9145-6416f45696e6",
+      "details_customerName": "Nola Horn",
+      "details_description": "nisi tempor aliquip consequat labore elit ut id"
+    },
+    {
+      "providerTransactionId": "3715b16e-186b-4fe5-814b-efa0b6d9e303",
+      "email": "fletcher_mayo@gmail.com",
+      "userId": "67d2c41a2c2adb6ed16c92c3",
+      "provider": "Stripe",
+      "amount": 349.77,
+      "currency": "USD",
+      "status": "refunded",
+      "transactionType": "refund",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-06-20T05:57:13.442Z",
+      "updatedAt": "2024-06-29T05:57:13.442Z",
+      "providerReference": "97d154ed-9e40-4901-9f01-4e9bb8d2e016",
+      "fraudRisk": "medium",
+      "details_invoiceId": "fccea9d9-e069-4b68-9643-f6541d54a61b",
+      "details_customerName": "Fletcher Mayo",
+      "details_description": "officia tempor aliquip dolor commodo occaecat ullamco aliqua"
+    },
+    {
+      "providerTransactionId": "39c96d8f-2534-4157-9f58-61125e98bb05",
+      "email": "martina_solis@gmail.com",
+      "userId": "67d2c41a7edd9dec9fdd8917",
+      "provider": "Stripe",
+      "amount": 717.17,
+      "currency": "USD",
+      "status": "disputed",
+      "transactionType": "refund",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-09-30T02:21:25.301Z",
+      "updatedAt": "2024-10-09T02:21:25.301Z",
+      "providerReference": "69f3c16d-a577-4dc5-999c-7d3c3966a4b5",
+      "fraudRisk": "low",
+      "details_invoiceId": "f36baf0c-b029-4b32-9e35-72e3450c9180",
+      "details_customerName": "Martina Solis",
+      "details_description": "culpa Lorem dolor ad elit Lorem pariatur commodo"
+    },
+    {
+      "providerTransactionId": "44e5a28c-3115-46b2-b19d-5c9d9c21aaeb",
+      "email": "briana_velazquez@yahoo.com",
+      "userId": "67d2c41ad908f4aa22fbe76b",
+      "provider": "PayPal",
+      "amount": 309.29,
+      "currency": "USD",
+      "status": "refunded",
+      "transactionType": "charge",
+      "paymentMethod": "card",
+      "createdAt": "2024-06-10T18:52:24.473Z",
+      "updatedAt": "2024-06-19T18:52:24.473Z",
+      "providerReference": "676788b8-e271-40df-a511-870ff05b8553",
+      "fraudRisk": "low",
+      "details_invoiceId": "035a8228-f137-4d37-9d36-2274c6ecb51f",
+      "details_customerName": "Briana Velazquez",
+      "details_description": "cillum dolor esse Lorem pariatur do aliqua laborum"
+    },
+    {
+      "providerTransactionId": "44cc3e15-b22d-4364-b09d-4be609a08e0e",
+      "email": "mcdowell_hodge@outlook.com",
+      "userId": "67d2c41ae9c51e4e54a6bb6b",
+      "provider": "PayPal",
+      "amount": 369.49,
+      "currency": "USD",
+      "status": "pending",
+      "transactionType": "charge",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-09-01T06:30:28.046Z",
+      "updatedAt": "2024-09-09T06:30:28.046Z",
+      "providerReference": "4efdc11c-d35f-4fe5-8923-54fb90fa97c0",
+      "fraudRisk": "high",
+      "details_invoiceId": "ad35072d-644c-4322-811e-db6cd085a865",
+      "details_customerName": "Mcdowell Hodge",
+      "details_description": "nostrud nostrud cillum culpa occaecat cupidatat sunt qui"
+    },
+    {
+      "providerTransactionId": "81d2d2a5-992d-4763-92d3-c7144d12f699",
+      "email": "britney_serrano@outlook.com",
+      "userId": "67d2c41ac2c175ac73e6c305",
+      "provider": "Stripe",
+      "amount": 613.17,
+      "currency": "USD",
+      "status": "refunded",
+      "transactionType": "refund",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-12-22T12:43:26.365Z",
+      "updatedAt": "2024-12-29T12:43:26.365Z",
+      "providerReference": "fdf43948-ffd9-42ee-9553-b1eccc2a4761",
+      "fraudRisk": "medium",
+      "details_invoiceId": "a076dd4e-6b55-45c3-8d88-2efaa7777a2e",
+      "details_customerName": "Britney Serrano",
+      "details_description": "deserunt ad ea ullamco velit eiusmod dolor et"
+    },
+    {
+      "providerTransactionId": "589efcd0-5dc5-44a1-a9bb-658ccd2f7fa3",
+      "email": "sue_hull@gmail.com",
+      "userId": "67d2c41a839e494e67b999d7",
+      "provider": "PayPal",
+      "amount": 894.39,
+      "currency": "USD",
+      "status": "failed",
+      "transactionType": "refund",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-01-23T09:19:56.86Z",
+      "updatedAt": "2024-01-25T09:19:56.86Z",
+      "providerReference": "49410127-a934-4df4-a1d8-9e9dbc187034",
+      "fraudRisk": "low",
+      "details_invoiceId": "37c19c49-72b9-4846-9bc3-5e286f9c2015",
+      "details_customerName": "Sue Hull",
+      "details_description": "irure quis Lorem incididunt labore ipsum commodo in"
+    },
+    {
+      "providerTransactionId": "bd6b003e-7a66-46f0-abea-5b27c0a4249f",
+      "email": "gibson_pruitt@gmail.com",
+      "userId": "67d2c41a9d2fda24d392c62a",
+      "provider": "Stripe",
+      "amount": 281.78,
+      "currency": "USD",
+      "status": "disputed",
+      "transactionType": "subscription",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-07-28T12:38:40.775Z",
+      "updatedAt": "2024-07-30T12:38:40.775Z",
+      "providerReference": "977787c3-2d2e-4a3c-8415-bef0f3ed0b85",
+      "fraudRisk": "medium",
+      "details_invoiceId": "5fda7b5b-843b-4688-af73-1ef6743799cb",
+      "details_customerName": "Gibson Pruitt",
+      "details_description": "ex voluptate consequat ullamco pariatur non laboris amet"
+    },
+    {
+      "providerTransactionId": "46ee9740-2a2b-4db4-9ae0-e5dc7c73fd67",
+      "email": "gilbert_bullock@yahoo.com",
+      "userId": "67d2c41a32b970bb290995da",
+      "provider": "PayPal",
+      "amount": 978.55,
+      "currency": "USD",
+      "status": "refunded",
+      "transactionType": "subscription",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-02-18T23:13:11.833Z",
+      "updatedAt": "2024-02-20T23:13:11.833Z",
+      "providerReference": "43423c4a-e6f8-44e2-a17d-25714b9a3371",
+      "fraudRisk": "low",
+      "details_invoiceId": "c3b3a9ff-6f65-41f3-a8a8-0cc1b36bc7b3",
+      "details_customerName": "Gilbert Bullock",
+      "details_description": "minim cupidatat non nisi ad est mollit in"
+    },
+    {
+      "providerTransactionId": "6ac994c7-fac1-42d3-8b21-716784728f21",
+      "email": "sosa_mcguire@outlook.com",
+      "userId": "67d2c41a416ba422c26f1c14",
+      "provider": "Stripe",
+      "amount": 361.25,
+      "currency": "USD",
+      "status": "failed",
+      "transactionType": "charge",
+      "paymentMethod": "card",
+      "createdAt": "2024-08-20T06:53:21.972Z",
+      "updatedAt": "2024-08-25T06:53:21.972Z",
+      "providerReference": "8fc7e4a7-72a6-4185-8345-50cd097109c4",
+      "fraudRisk": "high",
+      "details_invoiceId": "0a4b53a0-27e7-452b-8353-bad1af46461c",
+      "details_customerName": "Sosa Mcguire",
+      "details_description": "magna cupidatat id dolor amet sit irure enim"
+    },
+    {
+      "providerTransactionId": "26da7995-c69b-46db-a7de-7b16931c352d",
+      "email": "tracie_barnes@yahoo.com",
+      "userId": "67d2c41a139b9c3397bc2827",
+      "provider": "Stripe",
+      "amount": 472.94,
+      "currency": "USD",
+      "status": "disputed",
+      "transactionType": "subscription",
+      "paymentMethod": "paypal_balance",
+      "createdAt": "2024-12-03T19:48:52.356Z",
+      "updatedAt": "2024-12-09T19:48:52.356Z",
+      "providerReference": "f328e955-3383-4196-a5fa-076e59b2b5ef",
+      "fraudRisk": "high",
+      "details_invoiceId": "d5d1c1a7-41db-4733-8c51-86b477707a82",
+      "details_customerName": "Tracie Barnes",
+      "details_description": "velit ullamco proident eu ipsum enim deserunt consequat"
+    },
+    {
+      "providerTransactionId": "a619ba16-c331-48ab-a099-314a96d56e57",
+      "email": "janet_hubbard@gmail.com",
+      "userId": "67d2c41a170948ed7565509d",
+      "provider": "Stripe",
+      "amount": 625.05,
+      "currency": "USD",
+      "status": "refunded",
+      "transactionType": "charge",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-07-30T03:58:50.938Z",
+      "updatedAt": "2024-08-02T03:58:50.938Z",
+      "providerReference": "6384c235-81ee-43e7-a82b-1c3e826e82da",
+      "fraudRisk": "high",
+      "details_invoiceId": "b544bfc0-aa72-401d-aa59-e8ae2592d560",
+      "details_customerName": "Janet Hubbard",
+      "details_description": "aliquip deserunt excepteur mollit sunt elit mollit fugiat"
+    },
+    {
+      "providerTransactionId": "1adc154a-75cd-4c56-ab82-22e3cff02bd5",
+      "email": "sabrina_gonzales@outlook.com",
+      "userId": "67d2c41a0f77bee9b1077705",
+      "provider": "PayPal",
+      "amount": 331.62,
+      "currency": "USD",
+      "status": "pending",
+      "transactionType": "subscription",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-03-01T11:08:52.203Z",
+      "updatedAt": "2024-03-06T11:08:52.203Z",
+      "providerReference": "70d45c4c-6f7e-47ad-b20b-43897531567c",
+      "fraudRisk": "low",
+      "details_invoiceId": "ae13530e-f3d2-4392-8af5-5d033e8e50dc",
+      "details_customerName": "Sabrina Gonzales",
+      "details_description": "pariatur consequat dolore aute ut eu incididunt ipsum"
+    },
+    {
+      "providerTransactionId": "f58debd2-ea5c-4971-9f3f-2c010ddeabb1",
+      "email": "bradford_battle@yahoo.com",
+      "userId": "67d2c41a95e9a7954f08cbad",
+      "provider": "Stripe",
+      "amount": 391.64,
+      "currency": "USD",
+      "status": "refunded",
+      "transactionType": "refund",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-03-03T12:40:22.498Z",
+      "updatedAt": "2024-03-13T12:40:22.498Z",
+      "providerReference": "ecab4f84-867a-4671-ae14-3b4552a22c62",
+      "fraudRisk": "low",
+      "details_invoiceId": "82bd352b-eeac-4e10-bc80-5fde10ed583a",
+      "details_customerName": "Bradford Battle",
+      "details_description": "est ex nulla pariatur nostrud laborum ut in"
+    },
+    {
+      "providerTransactionId": "6e2a8b57-0757-4359-bbbd-202be3e51bd8",
+      "email": "eva_hebert@gmail.com",
+      "userId": "67d2c41a3d2477caed366b0b",
+      "provider": "Stripe",
+      "amount": 610.31,
+      "currency": "USD",
+      "status": "failed",
+      "transactionType": "payout",
+      "paymentMethod": "card",
+      "createdAt": "2024-10-21T17:24:25.136Z",
+      "updatedAt": "2024-10-30T17:24:25.136Z",
+      "providerReference": "4c85a352-d41a-4bbf-b319-19556e9f3d99",
+      "fraudRisk": "low",
+      "details_invoiceId": "c671c365-e946-4f90-9c69-b5ebf9c09b1c",
+      "details_customerName": "Eva Hebert",
+      "details_description": "irure velit aliqua ullamco Lorem nisi esse laboris"
+    },
+    {
+      "providerTransactionId": "b02ed4c4-27e1-4fc1-a505-45ad5212b981",
+      "email": "luella_richards@yahoo.com",
+      "userId": "67d2c41af830952933fd10a0",
+      "provider": "Stripe",
+      "amount": 146.44,
+      "currency": "USD",
+      "status": "pending",
+      "transactionType": "refund",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-07-09T20:46:03.54Z",
+      "updatedAt": "2024-07-16T20:46:03.54Z",
+      "providerReference": "93823ffb-2756-4731-a594-b87a2934e2b5",
+      "fraudRisk": "high",
+      "details_invoiceId": "cb8f2dfa-24a3-4bb3-996c-a862856037e9",
+      "details_customerName": "Luella Richards",
+      "details_description": "aute labore excepteur sit aute culpa sint velit"
+    }
+  ],
+  "missing_in_source": [
+    {
+      "transactionId": "c7eccd8d-06e6-43c7-9f16-96447fff4286",
+      "userId": "67d2c2ffac28a4cc455540db",
+      "amount": 1193.1,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-05-30T10:25:19.85Z",
+      "updatedAt": "2024-06-02T10:25:19.85Z",
+      "referenceId": "d7fc3230-55ef-4784-8c70-4fc42d248fce",
+      "metadata_orderId": "48168532-2dff-436d-bbe8-a33d2d021fea",
+      "metadata_description": "qui tempor consectetur aliqua ut cupidatat dolore deserunt"
+    },
+    {
+      "transactionId": "7f9e2c5c-9475-43bd-8c8a-e3cfd0972577",
+      "userId": "67d2c2ffe1651d9ce9ece9c1",
+      "amount": 1164.09,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-07-05T13:06:34.271Z",
+      "updatedAt": "2024-07-09T13:06:34.271Z",
+      "referenceId": "2531c78b-8316-4107-9973-5032ddf6c4b6",
+      "metadata_orderId": "4d70ba70-fd8f-4235-94de-4d9f197be418",
+      "metadata_description": "anim dolore veniam velit aute deserunt in dolore"
+    },
+    {
+      "transactionId": "b2950c0b-2997-4f9d-b8d4-c881f713f8d6",
+      "userId": "67d2c2ffc8321aea68615a24",
+      "amount": 291.91,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-08-05T10:05:44.899Z",
+      "updatedAt": "2024-08-15T10:05:44.899Z",
+      "referenceId": "e99c0bfe-ccf0-495f-b850-369375777884",
+      "metadata_orderId": "42948eb0-e6e9-4aa8-bb89-272b6631a17c",
+      "metadata_description": "fugiat sunt eiusmod aliqua exercitation deserunt excepteur pariatur"
+    },
+    {
+      "transactionId": "35839b0b-f5f1-4d89-b97c-d70bd4db0dc7",
+      "userId": "67d2c2ffcb361a6e7f4a8ba2",
+      "amount": 184.62,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-08-13T18:23:27.388Z",
+      "updatedAt": "2024-08-18T18:23:27.388Z",
+      "referenceId": "09ec436c-47b1-40b9-85d3-ebd941b4b555",
+      "metadata_orderId": "8571ff88-570d-4719-beee-658a634bfef9",
+      "metadata_description": "fugiat ad eu et cupidatat magna labore consequat"
+    },
+    {
+      "transactionId": "62ba9f8c-77ed-47f0-a9a1-c06576b19687",
+      "userId": "67d2c2ff9b3b91c89ec96254",
+      "amount": 32.03,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-10-17T15:37:33.134Z",
+      "updatedAt": "2024-10-26T15:37:33.134Z",
+      "referenceId": "0af9d0f9-aee9-43d2-a85c-1c3a75204ad6",
+      "metadata_orderId": "4491e295-4367-4e5b-96aa-b504769c988a",
+      "metadata_description": "occaecat reprehenderit aliqua nisi eiusmod dolor deserunt est"
+    },
+    {
+      "transactionId": "36664c02-1377-4923-82f7-541f276c93fc",
+      "userId": "67d2c2ff32a12b3f307b53e4",
+      "amount": 171.59,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-05-09T13:51:01.711Z",
+      "updatedAt": "2024-05-16T13:51:01.711Z",
+      "referenceId": "64fa0581-bcfb-42cb-b67e-d003828e8c70",
+      "metadata_orderId": "a5afdca2-7062-4c63-9617-7da97f120d0e",
+      "metadata_description": "qui laborum commodo sint non proident proident cupidatat"
+    },
+    {
+      "transactionId": "bc09fcdb-5946-427e-933e-924fbd145cc0",
+      "userId": "67d2c2ff7ee2346467490180",
+      "amount": 66.9,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-04-17T18:27:28.522Z",
+      "updatedAt": "2024-04-26T18:27:28.522Z",
+      "referenceId": "6e3126e6-6c27-4ccb-97a2-824177d3f45b",
+      "metadata_orderId": "c9d13693-f3f7-4823-af67-905784e5f736",
+      "metadata_description": "ipsum fugiat dolor qui dolor Lorem incididunt tempor"
+    },
+    {
+      "transactionId": "b1805bd3-076f-4194-8209-65d24855bf2f",
+      "userId": "67d2c2ff4bca2167b6a633ac",
+      "amount": 639.93,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-07-02T18:24:42.309Z",
+      "updatedAt": "2024-07-06T18:24:42.309Z",
+      "referenceId": "6ac60ae6-80e6-4c3d-9d68-0872c44dfb56",
+      "metadata_orderId": "fdbd6a03-1a20-4d8d-aaf8-95d227da7364",
+      "metadata_description": "nostrud aliqua ex cupidatat aliqua minim est ullamco"
+    },
+    {
+      "transactionId": "861b1cf8-7397-4320-a760-3da556606fc4",
+      "userId": "67d2c2fffbb65cad7cc7db6e",
+      "amount": 377.38,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-12-30T04:17:54.108Z",
+      "updatedAt": "2025-01-09T04:17:54.108Z",
+      "referenceId": "8a2124f8-b484-4e4a-8a22-f375666096fa",
+      "metadata_orderId": "7a1e33c3-1196-42ee-977f-96f9a271c4ad",
+      "metadata_description": "exercitation officia exercitation irure laboris cillum proident consequat"
+    },
+    {
+      "transactionId": "01a33fb7-5cb8-4b34-940f-b2764051a8c4",
+      "userId": "67d2c2ffb51432a6ad899c76",
+      "amount": 84.13,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-06-11T12:14:02.896Z",
+      "updatedAt": "2024-06-17T12:14:02.896Z",
+      "referenceId": "d5ea19ff-9904-4611-a498-605e03a013b0",
+      "metadata_orderId": "15987fa2-2994-4988-916d-83f0b238000f",
+      "metadata_description": "cupidatat labore est mollit dolore exercitation sit irure"
+    },
+    {
+      "transactionId": "7f78ab29-2ba6-45a2-8d6b-a3c6c9d22a57",
+      "userId": "67d2c2ff6bbf809a27bff23d",
+      "amount": 673.56,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-09-03T00:53:28.713Z",
+      "updatedAt": "2024-09-13T00:53:28.713Z",
+      "referenceId": "844f20a3-80f0-415c-ae5b-d36989d23e48",
+      "metadata_orderId": "8101dbdc-28a5-49f3-8cd7-e4c4484cd939",
+      "metadata_description": "qui enim qui ipsum laboris sint tempor do"
+    },
+    {
+      "transactionId": "1bbdc746-bdd0-4a5b-b7d6-9d4ff8bb1528",
+      "userId": "67d2c2ff4cadd7d4c3a4a7f8",
+      "amount": 1168.17,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-04-24T11:50:11.993Z",
+      "updatedAt": "2024-05-03T11:50:11.993Z",
+      "referenceId": "6f67f817-9c47-4b82-9750-7ada3da5c6fe",
+      "metadata_orderId": "7abf0f98-2cc2-4b4d-88f1-5df7af6458ec",
+      "metadata_description": "incididunt id fugiat commodo excepteur ea esse eu"
+    },
+    {
+      "transactionId": "592dbb3c-5a8f-49b5-a210-7e79e1417a85",
+      "userId": "67d2c2ff1ecc1eff010e0676",
+      "amount": 678.34,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-04-07T03:54:32.426Z",
+      "updatedAt": "2024-04-11T03:54:32.426Z",
+      "referenceId": "2c678c52-9f2d-45be-88bb-419ed2b661c7",
+      "metadata_orderId": "07e4333b-d915-4c86-9269-281bc4b7de02",
+      "metadata_description": "nulla quis id eu mollit mollit ipsum velit"
+    },
+    {
+      "transactionId": "32a2fc87-a726-4f9e-90bb-7fd3ee1eb5db",
+      "userId": "67d2c2ff332f525754d5cbc3",
+      "amount": 177.7,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-05-10T06:07:00.224Z",
+      "updatedAt": "2024-05-18T06:07:00.224Z",
+      "referenceId": "6261a7ec-1b1c-486f-8111-16a1ada330de",
+      "metadata_orderId": "e50953e9-9bdd-475d-990c-b41747420b67",
+      "metadata_description": "voluptate adipisicing fugiat pariatur qui ea duis do"
+    },
+    {
+      "transactionId": "c5751229-e581-4671-a2c3-12d28b335186",
+      "userId": "67d2c2ffa67ea6123ad14681",
+      "amount": 117.16,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-03-21T20:48:07.431Z",
+      "updatedAt": "2024-03-26T20:48:07.431Z",
+      "referenceId": "053543bc-9317-488c-9ec1-6ef53971600c",
+      "metadata_orderId": "328dc221-8ebf-4158-bb45-e5b201cb23dd",
+      "metadata_description": "eu fugiat exercitation officia culpa reprehenderit esse reprehenderit"
+    },
+    {
+      "transactionId": "95f31f09-48eb-4b06-a2b8-bae9af5c32da",
+      "userId": "67d2c2ffaec28481e380d40f",
+      "amount": 37.99,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-12-11T02:36:43.347Z",
+      "updatedAt": "2024-12-12T02:36:43.347Z",
+      "referenceId": "7ec91486-5ec9-4328-a397-083af82107bf",
+      "metadata_orderId": "f71a6984-0144-4b56-b2fe-fb35189982e6",
+      "metadata_description": "pariatur est esse Lorem commodo non enim aliquip"
+    },
+    {
+      "transactionId": "73f93a8a-fb2d-4c30-b5b5-28fd698fe2b8",
+      "userId": "67d2c2ff3da45ce27dfdeebd",
+      "amount": 447.67,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-10-07T06:26:37.315Z",
+      "updatedAt": "2024-10-15T06:26:37.315Z",
+      "referenceId": "c71accb8-f986-4ac3-81b2-fdcf0096758e",
+      "metadata_orderId": "42575fd7-ad9e-486b-9c6f-7cbb495e5ae5",
+      "metadata_description": "minim incididunt id exercitation mollit nulla aute proident"
+    },
+    {
+      "transactionId": "fc5b05ad-4f4c-4608-bded-dd3fbd9490bb",
+      "userId": "67d2c2ff4a68efd9f651600b",
+      "amount": 658.35,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-07-05T06:11:22.08Z",
+      "updatedAt": "2024-07-11T06:11:22.08Z",
+      "referenceId": "64517662-fd19-45d6-971d-050426850c5d",
+      "metadata_orderId": "82c5b148-275b-42f6-9a18-b93ff130919e",
+      "metadata_description": "magna exercitation aute ipsum non veniam velit officia"
+    },
+    {
+      "transactionId": "14f87c7a-80bd-4fcd-989e-1b5c302645c4",
+      "userId": "67d2c2ff9ff8be8efe987d09",
+      "amount": 619.27,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-04-17T10:14:35.812Z",
+      "updatedAt": "2024-04-18T10:14:35.812Z",
+      "referenceId": "10492ed4-2dfb-48cf-bef2-a7a6b50c1187",
+      "metadata_orderId": "e68e9fb7-ba2a-41dd-814a-147a89efd792",
+      "metadata_description": "cupidatat sit labore sint veniam qui tempor nisi"
+    },
+    {
+      "transactionId": "3386055e-ffaa-46e6-a1ea-7bf974765fd8",
+      "userId": "67d2c2ff383cb0f23c60c3c9",
+      "amount": 232.15,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-05-13T10:13:56.211Z",
+      "updatedAt": "2024-05-22T10:13:56.211Z",
+      "referenceId": "18d31065-413f-4e77-bb85-34340a875c32",
+      "metadata_orderId": "3df5db6a-f317-4203-9402-125700453ee7",
+      "metadata_description": "aute occaecat cupidatat deserunt do tempor et irure"
+    },
+    {
+      "transactionId": "286f2390-22b6-4a55-b056-a29c15fbbdf5",
+      "userId": "67d2c2ffc011e494100252af",
+      "amount": 78.1,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-11-27T09:11:14.763Z",
+      "updatedAt": "2024-12-01T09:11:14.763Z",
+      "referenceId": "5859fba0-4881-4e5d-8dc5-7a1ae68be05c",
+      "metadata_orderId": "e48aa4d4-e874-41e9-bd17-d306462de506",
+      "metadata_description": "Lorem laborum do magna commodo ullamco irure elit"
+    },
+    {
+      "transactionId": "f741569f-2fad-40ea-ab36-ed9618a0603c",
+      "userId": "67d2c2ff6c501974bbb45f5d",
+      "amount": 123.17,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-06-26T02:12:56.495Z",
+      "updatedAt": "2024-06-30T02:12:56.495Z",
+      "referenceId": "236df9b5-3152-4734-afae-39e325342328",
+      "metadata_orderId": "5b2e0fac-f4fd-47be-981b-9a52c4fb2b39",
+      "metadata_description": "esse officia proident ut esse officia eiusmod culpa"
+    },
+    {
+      "transactionId": "85593bcb-0fe7-4a6a-839a-e7045ca05ed7",
+      "userId": "67d2c2ffca8eefed2ac590db",
+      "amount": 659.47,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-01-03T09:57:19.902Z",
+      "updatedAt": "2024-01-08T09:57:19.902Z",
+      "referenceId": "3ed09f3f-74c4-4db2-add1-9462b99ef174",
+      "metadata_orderId": "e0bbb6e9-56df-484a-bd1b-cdc201d5387e",
+      "metadata_description": "consectetur labore exercitation ut sunt ad proident quis"
+    },
+    {
+      "transactionId": "55a9a27f-1f1b-4fed-a171-6748213320dc",
+      "userId": "67d2c2ffcb4ed3792079c989",
+      "amount": 1017.66,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-10-16T09:50:13.548Z",
+      "updatedAt": "2024-10-21T09:50:13.548Z",
+      "referenceId": "82fb8717-1654-4bb8-9025-3ecc0419848e",
+      "metadata_orderId": "6b620e57-7024-44d9-bdb4-f33e96bed7e4",
+      "metadata_description": "do irure sit magna non adipisicing officia quis"
+    },
+    {
+      "transactionId": "899213cc-bcb7-48a4-82ad-305691ecdd8f",
+      "userId": "67d2c2ffa7076c02c43b4703",
+      "amount": 116.68,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-07-19T11:02:15.384Z",
+      "updatedAt": "2024-07-20T11:02:15.384Z",
+      "referenceId": "8d9a7cf4-5cad-4f36-ac30-bc006a13866d",
+      "metadata_orderId": "9d4c6eea-b643-4946-bf98-bdd51d170aa1",
+      "metadata_description": "proident aute dolore duis sint commodo in cupidatat"
+    },
+    {
+      "transactionId": "0f079583-4a68-4666-966c-a796959c010b",
+      "userId": "67d2c2ff9053c9aff66db9eb",
+      "amount": 380.01,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-08-06T15:36:52.387Z",
+      "updatedAt": "2024-08-10T15:36:52.387Z",
+      "referenceId": "440db4a3-b9aa-43be-8c17-7e07490a3e41",
+      "metadata_orderId": "f35d5c6c-2689-4ae6-8386-0b6bb3274bb6",
+      "metadata_description": "dolore consectetur incididunt tempor irure est nisi officia"
+    },
+    {
+      "transactionId": "a94a0424-7232-4e34-9844-045d13a9e9f7",
+      "userId": "67d2c2ff738b6e0405e7d0e8",
+      "amount": 26.27,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-08-24T01:56:07.201Z",
+      "updatedAt": "2024-08-25T01:56:07.201Z",
+      "referenceId": "9564dd7d-59fe-42ee-93ab-74b2eb1cc56c",
+      "metadata_orderId": "540eba3d-520d-4709-b1d2-d9c88e3b6df6",
+      "metadata_description": "fugiat irure occaecat aute cupidatat laborum eu ullamco"
+    },
+    {
+      "transactionId": "39a7cab7-deab-40ef-b84f-af4385643dc9",
+      "userId": "67d2c2ffd42a133daf836908",
+      "amount": 812.31,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-07-08T06:46:07.408Z",
+      "updatedAt": "2024-07-12T06:46:07.408Z",
+      "referenceId": "8abdf7c6-3a51-4002-9f1a-8e185a9937ea",
+      "metadata_orderId": "533733d1-36d7-46dd-b05a-a84ee265bc4c",
+      "metadata_description": "est commodo non mollit excepteur elit anim ad"
+    },
+    {
+      "transactionId": "d91e9ee6-e485-4cad-b0da-31091cc34c47",
+      "userId": "67d2c2ff5c9ddd347f9abd3a",
+      "amount": 594.42,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-09-09T05:58:22.195Z",
+      "updatedAt": "2024-09-16T05:58:22.195Z",
+      "referenceId": "43c8382f-aeb5-4a01-8fea-4f403194f5c8",
+      "metadata_orderId": "02d21cb8-4f7e-488c-8263-2e02b3a23664",
+      "metadata_description": "nostrud dolor aliqua consectetur sit adipisicing in duis"
+    },
+    {
+      "transactionId": "c482079d-3e44-496a-923b-d9c3fb8e33c5",
+      "userId": "67d2c2fffef66883303675a2",
+      "amount": 208.2,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-03-26T17:44:01.002Z",
+      "updatedAt": "2024-04-05T17:44:01.002Z",
+      "referenceId": "b6c02b4a-ed8d-432b-9bcf-e1c37d3e3b9c",
+      "metadata_orderId": "cf8cf65a-a038-4ad9-a1b3-19b2d117c386",
+      "metadata_description": "minim et fugiat nulla nisi culpa tempor voluptate"
+    },
+    {
+      "transactionId": "f2ab084e-f7ee-4e06-a436-34d19f947edc",
+      "userId": "67d2c2ffe38e41ad08510623",
+      "amount": 331.55,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-10-03T23:36:50.161Z",
+      "updatedAt": "2024-10-13T23:36:50.161Z",
+      "referenceId": "6e96c20d-a590-4adc-9960-7dc04d5f2183",
+      "metadata_orderId": "7dd6bb31-bf5c-446d-93d7-c7d8fb2a364e",
+      "metadata_description": "excepteur ea mollit ipsum dolore non eu do"
+    },
+    {
+      "transactionId": "c4f85dbb-9d32-48ff-ab4a-c23c3d709a77",
+      "userId": "67d2c2ff713a11480034294f",
+      "amount": 1124.7,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-03-15T08:08:45.748Z",
+      "updatedAt": "2024-03-24T08:08:45.748Z",
+      "referenceId": "3bf9ddaa-b94c-49b9-b4cd-138617ee5c4c",
+      "metadata_orderId": "2ec698dc-933a-46fc-ab7d-008cb506a45a",
+      "metadata_description": "est consectetur nisi veniam minim adipisicing nostrud laborum"
+    },
+    {
+      "transactionId": "4b29b889-19dc-49fd-8a8b-71ac27807506",
+      "userId": "67d2c2ff320a3b330f24f247",
+      "amount": 420.84,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-06-12T11:57:12.336Z",
+      "updatedAt": "2024-06-14T11:57:12.336Z",
+      "referenceId": "7e05e8dd-a7c8-486c-85d8-5ae17581e815",
+      "metadata_orderId": "e0bbc70a-b429-4cc8-8d96-32045a698f3a",
+      "metadata_description": "ullamco nisi cillum voluptate magna enim deserunt magna"
+    },
+    {
+      "transactionId": "5e11f485-502e-46b9-a650-ea51aa66a2c9",
+      "userId": "67d2c2ff5993a4618533fae6",
+      "amount": 450.06,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-02-09T15:59:49.383Z",
+      "updatedAt": "2024-02-18T15:59:49.383Z",
+      "referenceId": "922b8d16-bb1d-445b-a072-1537a8912421",
+      "metadata_orderId": "febe8a90-1baa-41af-9aac-8dcce5939054",
+      "metadata_description": "do commodo officia mollit nostrud eiusmod nostrud amet"
+    },
+    {
+      "transactionId": "a9180e79-c758-4769-aabf-b28af6f5b8d9",
+      "userId": "67d2c2ffd1fccb588bbdc7ec",
+      "amount": 377.7,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-09-25T06:50:08.006Z",
+      "updatedAt": "2024-10-02T06:50:08.006Z",
+      "referenceId": "e7fe11db-4f1a-4601-9f58-4a3467796e44",
+      "metadata_orderId": "24eba81b-5dbd-4ed6-9417-1a22bd35487a",
+      "metadata_description": "ipsum occaecat eiusmod nulla magna adipisicing eiusmod incididunt"
+    },
+    {
+      "transactionId": "cf35cc36-b0d0-4336-9db2-c4b2df0b8cd6",
+      "userId": "67d2c2ff21d961b00de6a6d5",
+      "amount": 26.9,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-06-19T14:09:57.213Z",
+      "updatedAt": "2024-06-23T14:09:57.213Z",
+      "referenceId": "c99a2c01-5d0c-4796-bc34-f728994fa8d2",
+      "metadata_orderId": "8fc5e7fd-b374-4616-a506-8da94fa8c5c2",
+      "metadata_description": "sint ea ut nostrud culpa elit magna excepteur"
+    },
+    {
+      "transactionId": "53da0f0b-8b4d-43ad-a3a4-e5ae57d6a8e1",
+      "userId": "67d2c2fffaab593bc7ebed2a",
+      "amount": 545.01,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-12-21T00:30:40.142Z",
+      "updatedAt": "2024-12-22T00:30:40.142Z",
+      "referenceId": "134e40e0-0732-4bbe-b592-92f9386febe2",
+      "metadata_orderId": "4febeecd-5264-45c4-8b02-0c87b2a62a4a",
+      "metadata_description": "amet consectetur laborum duis ea est reprehenderit proident"
+    },
+    {
+      "transactionId": "3ed7f2af-7a5b-47eb-9673-0b2147763922",
+      "userId": "67d2c2ff0efe6caec6131a7b",
+      "amount": 164.04,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-08-24T02:29:18.764Z",
+      "updatedAt": "2024-09-02T02:29:18.764Z",
+      "referenceId": "f576c0e1-f124-4e7c-bdb6-84460a422418",
+      "metadata_orderId": "ca033308-85db-47b7-8f91-37382659530a",
+      "metadata_description": "laborum ullamco laborum et commodo voluptate amet culpa"
+    },
+    {
+      "transactionId": "07e9d771-b60a-45c8-b514-14458b2bcf0a",
+      "userId": "67d2c2ff0c00f45ded28564f",
+      "amount": 537.13,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-10-02T08:58:28.446Z",
+      "updatedAt": "2024-10-10T08:58:28.446Z",
+      "referenceId": "96b576cf-a7a9-4ed3-9f9a-99f2ca38cfff",
+      "metadata_orderId": "7378ab72-e7bb-4dde-8398-6a51cfff6c2b",
+      "metadata_description": "magna elit cupidatat quis labore consequat elit fugiat"
+    },
+    {
+      "transactionId": "f045ec6a-87f1-4d56-b99c-385ebdc5bf1e",
+      "userId": "67d2c2ffb2222a9ea6f9ebd5",
+      "amount": 391.81,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-01-21T01:08:48.851Z",
+      "updatedAt": "2024-01-29T01:08:48.851Z",
+      "referenceId": "b3ad9306-d38e-4ec1-a5a7-f37d7b38dbe6",
+      "metadata_orderId": "4d9860d2-73dd-4073-81bb-9fc1eea4e54f",
+      "metadata_description": "eu velit est commodo aliquip laboris cupidatat nulla"
+    },
+    {
+      "transactionId": "93d8a1dc-1097-4dd8-9cf9-f6ebb02c27c8",
+      "userId": "67d2c2fff3fa9ff4324cda0b",
+      "amount": 216.21,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-09-04T07:47:04.118Z",
+      "updatedAt": "2024-09-07T07:47:04.118Z",
+      "referenceId": "1bdd865d-5daa-4faa-81ed-f0ed21c82698",
+      "metadata_orderId": "27a94ecb-c064-42bd-b104-3ac2ad85dd0b",
+      "metadata_description": "voluptate exercitation do non commodo nulla irure labore"
+    },
+    {
+      "transactionId": "ef6cd49e-c1cc-4d02-a2aa-d4d1e01f9712",
+      "userId": "67d2c2ffe57f539f7c922afc",
+      "amount": 799.17,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-02-03T02:26:30.817Z",
+      "updatedAt": "2024-02-09T02:26:30.817Z",
+      "referenceId": "9d3c9036-c61b-4082-b2cc-5eb8dafed6c7",
+      "metadata_orderId": "95118eba-708d-4e05-8936-30ea1124ddad",
+      "metadata_description": "laborum nostrud aliquip non consequat deserunt irure nisi"
+    },
+    {
+      "transactionId": "1551ec00-f65a-4dbc-bbb6-8666a6d22ced",
+      "userId": "67d2c2ff61fa6b7a1e0747f3",
+      "amount": 586.1,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-08-16T06:50:10.847Z",
+      "updatedAt": "2024-08-22T06:50:10.847Z",
+      "referenceId": "2301ed15-0a69-4a55-8665-7f8337004b73",
+      "metadata_orderId": "7ce4b6e6-775a-4f62-b8cd-4a3d778ca7e2",
+      "metadata_description": "nisi nulla mollit incididunt esse tempor aute incididunt"
+    },
+    {
+      "transactionId": "08b7dbac-c7a4-4890-ac4c-8672d9a08068",
+      "userId": "67d2c2ff384b7a099449b2a2",
+      "amount": 527.15,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-09-05T10:09:42.016Z",
+      "updatedAt": "2024-09-10T10:09:42.016Z",
+      "referenceId": "ba308dfc-2df4-4e33-a79c-cc0c057408a5",
+      "metadata_orderId": "eec991ae-fbc8-4ced-9e96-62050b5b4353",
+      "metadata_description": "non proident in ea nisi cupidatat cupidatat nisi"
+    },
+    {
+      "transactionId": "0b35b26b-deeb-4a0b-83d2-dc91cef39ce0",
+      "userId": "67d2c2ffab31bf18d4865cb3",
+      "amount": 679.18,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-02-06T17:30:13.824Z",
+      "updatedAt": "2024-02-11T17:30:13.824Z",
+      "referenceId": "20d00dc1-30aa-4eb6-a13b-e5907ed342fa",
+      "metadata_orderId": "6353c0d3-7c00-4caf-99ad-d1d21450b7cb",
+      "metadata_description": "non nulla anim aute aliquip nisi irure nostrud"
+    },
+    {
+      "transactionId": "8375e0dc-371a-458f-b051-9cb54f3ef890",
+      "userId": "67d2c2ffc2fcd201199c85cf",
+      "amount": 398.68,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-02-18T23:09:08.088Z",
+      "updatedAt": "2024-02-23T23:09:08.088Z",
+      "referenceId": "279018ef-6920-4863-bf60-918fdb9c3314",
+      "metadata_orderId": "fa6ad370-017b-4483-8296-56d366f5dd8a",
+      "metadata_description": "qui dolore velit Lorem ad et commodo quis"
+    },
+    {
+      "transactionId": "89816bb1-45d8-4574-9a26-0aee353d41a3",
+      "userId": "67d2c2ff371a32cd32abb961",
+      "amount": 341.59,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-04-29T01:32:44.626Z",
+      "updatedAt": "2024-05-08T01:32:44.626Z",
+      "referenceId": "066aaf33-fc22-4506-82bc-e76856ae267c",
+      "metadata_orderId": "eeccdeda-6aae-4669-8171-7f6867a887c4",
+      "metadata_description": "aliquip fugiat culpa est occaecat aliqua sunt sunt"
+    },
+    {
+      "transactionId": "0dd7e61d-7fb2-4b3d-90dc-7dd8a9cc54be",
+      "userId": "67d2c2ff3c66226a2420101c",
+      "amount": 1103.59,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-06-20T19:26:45.654Z",
+      "updatedAt": "2024-06-24T19:26:45.654Z",
+      "referenceId": "20857182-408d-48dd-b267-ef88c1539999",
+      "metadata_orderId": "9eaa2015-9222-4a0a-ad74-af6265c026a2",
+      "metadata_description": "proident consectetur exercitation nisi magna reprehenderit qui ipsum"
+    },
+    {
+      "transactionId": "1e154805-8b12-4f9b-b8ab-a35ed643740c",
+      "userId": "67d2c2ff69fe006fa5c0414f",
+      "amount": 183.22,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-12-22T14:02:06.853Z",
+      "updatedAt": "2024-12-30T14:02:06.853Z",
+      "referenceId": "778a69f2-90ca-42f6-bb9b-b7b630ef91f5",
+      "metadata_orderId": "84c0c81d-5452-4456-b6c6-17c35eb51ab0",
+      "metadata_description": "laboris deserunt sunt eiusmod dolore est consequat tempor"
+    },
+    {
+      "transactionId": "7c9401e3-c926-42ba-84fb-6f2822edb3e6",
+      "userId": "67d2c2ff673590d0aa6bf04d",
+      "amount": 418.28,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "paypal",
+      "createdAt": "2024-05-28T08:51:50.67Z",
+      "updatedAt": "2024-05-31T08:51:50.67Z",
+      "referenceId": "9d99e127-d9a0-4d12-a387-af720c4c1135",
+      "metadata_orderId": "eb553491-2e11-4bba-b90f-be9da2e81c5c",
+      "metadata_description": "cupidatat cupidatat sint commodo dolore irure qui anim"
+    },
+    {
+      "transactionId": "bd4323d8-d052-4f59-96ab-c679a7222b13",
+      "userId": "67d2c2ff5e22af3ed36692d2",
+      "amount": 326.36,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-11-01T09:10:57.337Z",
+      "updatedAt": "2024-11-09T09:10:57.337Z",
+      "referenceId": "ac91ce28-dd4b-4a00-8bbb-3dde44b30beb",
+      "metadata_orderId": "e7592352-258d-460e-9f71-4598eaf77949",
+      "metadata_description": "nulla do nostrud elit excepteur mollit amet pariatur"
+    },
+    {
+      "transactionId": "891e8cf7-7603-4287-ba3a-7c05ca2f2826",
+      "userId": "67d2c2ff40f7f9a941ab4e73",
+      "amount": 656.95,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-02-04T21:47:54.497Z",
+      "updatedAt": "2024-02-13T21:47:54.497Z",
+      "referenceId": "f2d1e0b8-e2a3-46f0-82df-fb344d533326",
+      "metadata_orderId": "28d0a4e0-5479-4453-bbda-a37bb7526a5d",
+      "metadata_description": "dolor nulla aute officia aute ad anim sint"
+    },
+    {
+      "transactionId": "d661fb1f-5db9-4051-a159-a5eb43571ece",
+      "userId": "67d2c2ff7a05d74857a7c431",
+      "amount": 201.08,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-01-18T11:00:42.87Z",
+      "updatedAt": "2024-01-21T11:00:42.87Z",
+      "referenceId": "7a22881b-81bb-428f-817c-80311a3042e8",
+      "metadata_orderId": "f2c604c8-d633-4953-82ae-5fae32cbf977",
+      "metadata_description": "laborum ad sit consectetur enim deserunt magna esse"
+    },
+    {
+      "transactionId": "a7a1a265-190d-40c6-bb80-e5f0a234a7c1",
+      "userId": "67d2c2ff50bc06daa142b6df",
+      "amount": 195.5,
+      "currency": "USD",
+      "status": "pending",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-01-17T01:31:07.521Z",
+      "updatedAt": "2024-01-23T01:31:07.521Z",
+      "referenceId": "861550c2-f0a6-450e-b6f0-7313c4e4fef9",
+      "metadata_orderId": "7f8b6cde-62e5-45e3-a2fd-a3bc4c7c23f8",
+      "metadata_description": "deserunt excepteur qui non consectetur enim pariatur aute"
+    },
+    {
+      "transactionId": "69393059-742d-42d0-bfa5-ebd72e0e28e2",
+      "userId": "67d2c2ff4660aa055fb7917f",
+      "amount": 104.83,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-06-05T07:25:05.673Z",
+      "updatedAt": "2024-06-13T07:25:05.673Z",
+      "referenceId": "6211d69f-a264-4bd9-8706-f00e3909220f",
+      "metadata_orderId": "b0a25749-d48f-4f66-8e59-bd81ab1321ac",
+      "metadata_description": "non est occaecat sint enim quis anim in"
+    },
+    {
+      "transactionId": "d273946f-ac2a-4dc6-8d27-a8ebd1179946",
+      "userId": "67d2c2ff420b55ffc3cc9dd8",
+      "amount": 161.32,
+      "currency": "USD",
+      "status": "refunded",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-12-18T16:59:33.424Z",
+      "updatedAt": "2024-12-26T16:59:33.424Z",
+      "referenceId": "254a3016-6aff-46d9-9b52-3d9e3207c29f",
+      "metadata_orderId": "2e084ef3-bac2-4472-b3fb-110c2ec2b420",
+      "metadata_description": "eu ex non quis nisi eiusmod aliqua deserunt"
+    },
+    {
+      "transactionId": "412d8f28-27e3-47f3-9689-2a728f2b47f8",
+      "userId": "67d2c2ff26459b2bae4e9c6f",
+      "amount": 1002.02,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "credit_card",
+      "createdAt": "2024-08-04T08:38:46.054Z",
+      "updatedAt": "2024-08-09T08:38:46.054Z",
+      "referenceId": "65e12be0-2c7d-4666-86aa-a7bf66cb6e74",
+      "metadata_orderId": "ece83a23-5943-45ff-902b-8530dfcc4fa5",
+      "metadata_description": "nisi mollit commodo dolore do in est do"
+    },
+    {
+      "transactionId": "3edc6ba9-5f60-4c02-b533-59c0956a55ef",
+      "userId": "67d2c2ffaee4f7a9c2354bee",
+      "amount": 87.58,
+      "currency": "USD",
+      "status": "failed",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-04-29T15:46:21.496Z",
+      "updatedAt": "2024-05-04T15:46:21.496Z",
+      "referenceId": "b2157f35-90f0-4be2-b17c-a7a457df559f",
+      "metadata_orderId": "43b96898-eb6f-485b-b67b-8a20030cd9f8",
+      "metadata_description": "ea in et anim minim adipisicing excepteur pariatur"
+    },
+    {
+      "transactionId": "1455486e-614a-4c2f-be73-9661f4fbdb6d",
+      "userId": "67d2c2ff6152bd2352f6f160",
+      "amount": 1142.44,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "bank_transfer",
+      "createdAt": "2024-11-10T13:51:47.322Z",
+      "updatedAt": "2024-11-16T13:51:47.322Z",
+      "referenceId": "b726f099-1119-4ac5-8662-ea717e647cb8",
+      "metadata_orderId": "3358c1de-36ed-447a-b2de-200471dd6a59",
+      "metadata_description": "dolore et voluptate velit nisi anim ipsum laboris"
+    }
+  ],
+  "summary": {
+    "total_source_transactions": 91,
+    "total_system_transactions": 122,
+    "missing_in_internal_count": 28,
+    "missing_in_source_count": 59,
+    "mismatched_transactions_count": 14,
+    "successfully_matched_count": 49
+  }
+}

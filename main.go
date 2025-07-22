@@ -44,4 +44,15 @@ func main() {
 
 	// Print summary
 	service.PrintSummary(result)
+
+
+	// Output the detailed JSON result to a file
+	fmt.Println("\n📊 DETAILED RECONCILIATION REPORT:")
+	fmt.Println("==================================")
+	err = service.OutputReconciliationResult(result)
+	if err != nil {
+		log.Fatalf("Failed to output reconciliation result: %v", err)
+	}
+
+	fmt.Println("\n✅ Reconciliation completed successfully!")
 }
