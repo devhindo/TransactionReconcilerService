@@ -100,22 +100,6 @@ func (tr *TransactionReconciler) findDiscrepancies(source SourceTransaction, sys
 		}
 	}
 
-	// Compare currencies
-	if source.Currency != system.Currency {
-		discrepancies["currency"] = Discrepancy{
-			Source: source.Currency,
-			System: system.Currency,
-		}
-	}
-
-	// Compare user IDs if they exist
-	if source.UserID != "" && system.UserID != "" && source.UserID != system.UserID {
-		discrepancies["userId"] = Discrepancy{
-			Source: source.UserID,
-			System: system.UserID,
-		}
-	}
-
 	return discrepancies
 }
 

@@ -7,20 +7,16 @@ import (
 	"fmt"
 )
 
-
-
-
-
 func main() {
 
 	// Initialize the service
 	service := NewTransactionReconciliationService()
 
-	// get the paths for the CSV files
 	workingDir, err := os.Getwd()
 	if err != nil {
 		log.Fatalf("Failed to get working directory: %v", err)
-	}
+	}// get the paths for the CSV files
+	
 
 	sourceFile := filepath.Join(workingDir, "assets", "data", "csvs", "source_transactions.csv")
 	systemFile := filepath.Join(workingDir, "assets", "data", "csvs", "system_transactions.csv")
