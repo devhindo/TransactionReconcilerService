@@ -14,3 +14,7 @@ Using `gh` cli tool:
 - Initializing Go project:
 
 ![Initializing Go project](./assets/imgs/initGoProject.png)
+
+## Adding the CSVs files
+
+![Adding the CSVs files](./assets/imgs/CSVsFiles.png)
