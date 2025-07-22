@@ -18,3 +18,7 @@ Using `gh` cli tool:
 ## Adding the CSVs files
 
 ![Adding the CSVs files](./assets/imgs/CSVsFiles.png)
+
+## Created the necessary data structures used across the service
+
+seen in [models/transaction.go](./models/transaction.go)
