@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"log"
 	"strings"
+	"encoding/json"
+	"os"
 )
 
 // TransactionReconciliationService is the main service that generates the reconciliation report
@@ -20,6 +22,7 @@ func NewTransactionReconciliationService() *TransactionReconciliationService {
 	}
 }
 
+// ProcessReconciliation reads transactions from CSV files, reconciles them, and returns the result
 func (s *TransactionReconciliationService) ProcessReconciliation(sourceFilePath, systemFilePath string) (*ReconciliationResult, error) {
 	// Read source transactions
 	log.Printf("Reading source transactions from: %s", sourceFilePath)
@@ -43,6 +46,37 @@ func (s *TransactionReconciliationService) ProcessReconciliation(sourceFilePath,
 	log.Println("Reconciliation completed")
 
 	return result, nil
+}
+
+// OutputReconciliationResult outputs the reconciliation result in JSON format
+func (s *TransactionReconciliationService) OutputReconciliationResult(result *ReconciliationResult) error {
+	// Create output in the required format
+	output := map[string]interface{}{
+		"missing_in_internal":      result.MissingInInternal,
+		"missing_in_source":        result.MissingInSource,
+		"mismatched_transactions":  result.MismatchedTransactions,
+		"summary":                  result.Summary,
+	}
+
+	// Convert to JSON with pretty printing
+	jsonOutput, err := json.MarshalIndent(output, "", "  ")
+	if err != nil {
+		return fmt.Errorf("failed to marshal result to JSON: %w", err)
+	}
+
+	// Print to console
+	fmt.Println(string(jsonOutput))
+
+	// Also save to file
+	outputFile := "reconciliation_report.json"
+	err = os.WriteFile(outputFile, jsonOutput, 0644)
+	if err != nil {
+		log.Printf("Warning: Could not save report to file %s: %v", outputFile, err)
+	} else {
+		log.Printf("Reconciliation report saved to: %s", outputFile)
+	}
+
+	return nil
 }
 
 // PrintSummary prints a human-readable summary of the reconciliation results

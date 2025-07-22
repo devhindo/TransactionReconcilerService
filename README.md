@@ -27,6 +27,8 @@ seen in [models.go](./models.go)
 
 ## created an struct and constructor for the service
 
+seen in [transaction.go](./transaction.go)
+
 ```Go
 // TransactionReconciliationService is the main service that orchestrates the reconciliation process
 type TransactionReconciliationService struct {
@@ -41,6 +43,11 @@ func NewTransactionReconciliationService() *TransactionReconciliationService {
 		reconciler: NewTransactionReconciler(),
 	}
 }
+
+// ProcessReconciliation reads transactions from CSV files, reconciles them, and returns the result
+func (s *TransactionReconciliationService) ProcessReconciliation(sourceFilePath, systemFilePath string) (*ReconciliationResult, error)
+
+
 ```
 ## Creating the CSVReader struct and constructor
 
