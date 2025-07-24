@@ -90,10 +90,8 @@ func (tr *TransactionReconciler) findDiscrepancies(source SourceTransaction, sys
 		}
 	}
 
-	// Compare statuses (normalize status values for comparison)
-	sourceStatus := tr.normalizeStatus(source.Status)
-	systemStatus := tr.normalizeStatus(system.Status)
-	if sourceStatus != systemStatus {
+	// Compare statuses
+	if source.Status != system.Status {
 		discrepancies["status"] = Discrepancy{
 			Source: source.Status,
 			System: system.Status,
@@ -107,23 +105,4 @@ func (tr *TransactionReconciler) findDiscrepancies(source SourceTransaction, sys
 func (tr *TransactionReconciler) isAmountEqual(amount1, amount2 float64) bool {
 	tolerance := 0.01 // 1 cent tolerance
 	return math.Abs(amount1-amount2) < tolerance
-}
-
-// normalizeStatus normalizes status values for comparison
-// Maps similar statuses to common values for better matching
-func (tr *TransactionReconciler) normalizeStatus(status string) string {
-	statusMap := map[string]string{
-		"succeeded": "completed",
-		"success":   "completed",
-		"completed": "completed",
-		"pending":   "pending",
-		"failed":    "failed",
-		"refunded":  "refunded",
-		"disputed":  "disputed",
-	}
-
-	if normalized, exists := statusMap[status]; exists {
-		return normalized
-	}
-	return status
 }
