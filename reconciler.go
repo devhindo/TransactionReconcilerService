@@ -2,6 +2,7 @@ package main
 
 import (
 	"math"
+	"strings"
 )
 
 // TransactionReconciler handles the reconciliation logic
@@ -90,8 +91,10 @@ func (tr *TransactionReconciler) findDiscrepancies(source SourceTransaction, sys
 		}
 	}
 
-	// Compare statuses
-	if source.Status != system.Status {
+	// Compare statuses (normalize before comparison)
+	normalizedSourceStatus := tr.normalizeStatus(source.Status)
+	normalizedSystemStatus := tr.normalizeStatus(system.Status)
+	if normalizedSourceStatus != normalizedSystemStatus {
 		discrepancies["status"] = Discrepancy{
 			Source: source.Status,
 			System: system.Status,
@@ -105,4 +108,18 @@ func (tr *TransactionReconciler) findDiscrepancies(source SourceTransaction, sys
 func (tr *TransactionReconciler) isAmountEqual(amount1, amount2 float64) bool {
 	tolerance := 0.01 // 1 cent tolerance
 	return math.Abs(amount1-amount2) < tolerance
+}
+
+// normalizeStatus standardizes status values from different systems to a common format
+// This ensures accurate matching despite different naming conventions between source and system data
+func (tr *TransactionReconciler) normalizeStatus(status string) string {
+	// Convert to uppercase for case-insensitive comparison
+	normalizedStatus := strings.ToUpper(strings.TrimSpace(status))
+
+	// Handle SUCCEEDED and COMPLETED as the same thing
+	if normalizedStatus == "SUCCEEDED" || normalizedStatus == "COMPLETED" {
+		return "COMPLETED"
+	}
+
+	return normalizedStatus
 }
