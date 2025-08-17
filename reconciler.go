@@ -3,6 +3,7 @@ package main
 import (
 	"math"
 	"strings"
+	"time"
 )
 
 // TransactionReconciler handles the reconciliation logic
@@ -83,11 +84,27 @@ func (tr *TransactionReconciler) Reconcile(sourceTransactions []SourceTransactio
 func (tr *TransactionReconciler) findDiscrepancies(source SourceTransaction, system SystemTransaction) map[string]Discrepancy {
 	discrepancies := make(map[string]Discrepancy)
 
+	// Compare User ID
+	if source.UserID != system.UserID {
+		discrepancies["userId"] = Discrepancy{
+			Source: source.UserID,
+			System: system.UserID,
+		}
+	}
+
 	// Compare amounts with tolerance for floating point precision
 	if !tr.isAmountEqual(source.Amount, system.Amount) {
 		discrepancies["amount"] = Discrepancy{
 			Source: source.Amount,
 			System: system.Amount,
+		}
+	}
+
+	// Compare currency
+	if source.Currency != system.Currency {
+		discrepancies["currency"] = Discrepancy{
+			Source: source.Currency,
+			System: system.Currency,
 		}
 	}
 
@@ -98,6 +115,38 @@ func (tr *TransactionReconciler) findDiscrepancies(source SourceTransaction, sys
 		discrepancies["status"] = Discrepancy{
 			Source: source.Status,
 			System: system.Status,
+		}
+	}
+
+	// Compare payment method
+	if source.PaymentMethod != system.PaymentMethod {
+		discrepancies["paymentMethod"] = Discrepancy{
+			Source: source.PaymentMethod,
+			System: system.PaymentMethod,
+		}
+	}
+
+	// Compare created timestamps (allow small tolerance for time differences)
+	if !tr.isTimeEqual(source.CreatedAt, system.CreatedAt) {
+		discrepancies["createdAt"] = Discrepancy{
+			Source: source.CreatedAt.Format(time.RFC3339),
+			System: system.CreatedAt.Format(time.RFC3339),
+		}
+	}
+
+	// Compare updated timestamps (allow small tolerance for time differences)
+	if !tr.isTimeEqual(source.UpdatedAt, system.UpdatedAt) {
+		discrepancies["updatedAt"] = Discrepancy{
+			Source: source.UpdatedAt.Format(time.RFC3339),
+			System: system.UpdatedAt.Format(time.RFC3339),
+		}
+	}
+
+	// Compare provider reference with system reference ID
+	if source.ProviderReference != system.ReferenceID {
+		discrepancies["referenceId"] = Discrepancy{
+			Source: source.ProviderReference,
+			System: system.ReferenceID,
 		}
 	}
 
@@ -122,4 +171,11 @@ func (tr *TransactionReconciler) normalizeStatus(status string) string {
 	}
 
 	return normalizedStatus
+}
+
+// isTimeEqual compares two timestamps with a tolerance for small time differences
+// This handles cases where timestamps might be slightly different due to processing delays
+func (tr *TransactionReconciler) isTimeEqual(time1, time2 time.Time) bool {
+	tolerance := 5 * time.Second // 5 second tolerance
+	return time1.Sub(time2).Abs() <= tolerance
 }
